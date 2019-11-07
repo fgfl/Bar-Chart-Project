@@ -15,25 +15,7 @@
     <button id="addButton">add a class</button>
     <button id="removeButton">remove a class</button>
 
-    <script src="jquery-3.4.1.js"></script>
-    <script>
-
-      $( document ).ready(function() {
-          $( "a" ).click(function( event ) {
-              alert( "The link will no longer take you to jquery.com" );
-              event.preventDefault();
-          });
-
-          $("#addButton").click(function( event) {
-            $("a").addClass("test")
-          })
-
-          $("#removeButton").click(function( event) {
-            $("a").removeClass("test")
-          })
-      });
-
-
-    </script>
+    <script src="jquery-3.4.1.js" ></script>
+    <script src="test-page-scripts.js"></script>
 </body>
 </html>
