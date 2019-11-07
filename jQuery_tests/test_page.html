@@ -3,9 +3,18 @@
 <head>
     <meta charset="utf-8">
     <title>Demo</title>
+    <style>
+      a.test {
+        font-weight: bold;
+      }
+    </style>
 </head>
 <body>
     <a href="http://jquery.com/">jQuery</a>
+    <br>
+    <button id="addButton">add a class</button>
+    <button id="removeButton">remove a class</button>
+
     <script src="jquery-3.4.1.js"></script>
     <script>
 
@@ -14,7 +23,16 @@
               alert( "The link will no longer take you to jquery.com" );
               event.preventDefault();
           });
+
+          $("#addButton").click(function( event) {
+            $("a").addClass("test")
+          })
+
+          $("#removeButton").click(function( event) {
+            $("a").removeClass("test")
+          })
       });
+
 
     </script>
 </body>
