@@ -1,6 +1,6 @@
 
 
-$( document ).ready(function() {
+function testPageFns($) {
     $( "a" ).click(function( event ) {
         event.preventDefault();
         $(this).hide("slow");
@@ -15,4 +15,4 @@ $( document ).ready(function() {
     $("#removeButton").click(function( event) {
       $("a").removeClass("test")
     })
-});
+};

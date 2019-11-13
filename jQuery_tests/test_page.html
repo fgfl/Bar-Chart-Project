@@ -15,7 +15,11 @@
     <button id="addButton">add a class</button>
     <button id="removeButton">remove a class</button>
 
-    <script src="jquery-3.4.1.js" ></script>
     <script src="test-page-scripts.js"></script>
+    <script src="jquery-3.4.1.js" ></script>
+    <script>
+      jQuery.noConflict();
+      jQuery(document).ready(testPageFns);
+    </script>
 </body>
 </html>
